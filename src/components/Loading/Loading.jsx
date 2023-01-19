@@ -1,0 +1,15 @@
+import React from 'react';
+import style from './loading.module.scss';
+
+import './loading.module.scss';
+
+function Loading() {
+    return (
+        <div className='d-flex flex-row align-items-center justify-content-center flex-fill'>
+            <i className={`fa-solid fa-spinner ${style.spinner} `}></i>
+        </div>
+    );
+}
+
+
+export default React.memo(Loading);
