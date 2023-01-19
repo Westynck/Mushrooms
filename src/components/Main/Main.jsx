@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useContext } from "react";
-import axios from "axios";
 // J'importe mon contexte ApiContext pour pouvoir récupérer la valeur de l'URL de mon API stockée dans le contexte ApiContext
 import { ApiContext } from '../../context/ApiContext';
 import useAxiosData from "../../hooks/useAxiosData";
