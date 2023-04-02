@@ -1,17 +1,14 @@
 import React from "react";
 
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
+import Footer from "../footer/Footer";
+import Header from "../header/Header";
 import Main from "../Main/Main";
 import styles from "./App.module.scss";
 import Admin from "../Admin/Admin";
 
-// import { seedMushrooms } from "../../data/seed";
-
+import { seedMushrooms } from "../../data/seed";
 
 // seedMushrooms();
-
-
 
 function App() {
   const [page, setPage] = React.useState("Main");

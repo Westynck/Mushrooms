@@ -1,16 +1,17 @@
 import React, { useContext } from "react";
-import { ApiContext } from "../../context/ApiContext";
+import { ApiContext } from "../../Context/ApiContext";
 
 import axios from "axios";
-
 
 // import PropTypes from "prop-types";
 
 import styles from "./Mushrooms.module.scss";
 
-
-function Mushrooms({ mushroom: { image, title, _id, liked }, updateMushroom, deleteMushroom }) {
-
+function Mushrooms({
+  mushroom: { image, title, _id, liked },
+  updateMushroom,
+  deleteMushroom,
+}) {
   const API_URL = useContext(ApiContext);
 
   async function handleClickLike() {
@@ -37,7 +38,7 @@ function Mushrooms({ mushroom: { image, title, _id, liked }, updateMushroom, del
         console.log(response.config.method);
       }
     } catch (error) {
-      console.log('Error deleting mushroom');
+      console.log("Error deleting mushroom");
     }
   }
 
@@ -52,7 +53,7 @@ function Mushrooms({ mushroom: { image, title, _id, liked }, updateMushroom, del
         className={`${styles.mushroomTitle} d-flex flex-column justify-content-center align-items-center `}
       >
         <h3 className="mb-10">{title}</h3>
-        <i className={`fa-solid fa-heart  ${liked ? 'text-primary' : ''}`} />
+        <i className={`fa-solid fa-heart  ${liked ? "text-primary" : ""}`} />
       </div>
     </div>
   );

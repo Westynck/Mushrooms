@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./components/app/App";
-import { ApiContext } from "./context/ApiContext";
+import { ApiContext } from "./Context/ApiContext";
 
 import "./styles/index.scss";
 
